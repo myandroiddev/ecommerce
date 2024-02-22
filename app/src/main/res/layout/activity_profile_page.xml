@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".profilePage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/image_section"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#3d93f8"
+            android:backgroundTint="#3d93f8"
+            app:backgroundTint="#3d93f8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#3d93f8"
+                android:src="@drawable/baseline_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/intersemibold"
+                android:text="Edit Profile"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#3d93f8"
+                android:fontFamily="@font/intersemibold"
+                android:paddingBottom="15dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/prof1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageButton
+                android:id="@+id/add_Image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="110dp"
+                android:backgroundTint="#FF5044"
+                android:src="@drawable/baseline_camera_alt_24"
+                app:layout_constraintStart_toStartOf="@+id/circleImageView3"
+                app:layout_constraintTop_toTopOf="@+id/circleImageView3"></ImageButton>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_section">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/interregular"
+                android:text="Username"
+                android:textColor="#8F959E"
+                android:textSize="18dp"></TextView>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView21"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/interregular"
+                android:text="Email"
+                android:textColor="#8F959E"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="22dp"
+                tools:layout_editor_absoluteY="352dp"></TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView20"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/interregular"
+                android:text="Phone"
+                android:textColor="#8F959E"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="22dp"
+                tools:layout_editor_absoluteY="352dp"></TextView>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView22"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/interregular"
+                android:text="Street"
+                android:textColor="#8F959E"
+                android:textSize="18dp"></TextView>
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView23"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/street"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/interregular"
+                android:text="City"
+                android:textColor="#8F959E"
+                android:textSize="18dp"></TextView>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView24"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/city"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/interregular"
+                android:text="State"
+                android:textColor="#8F959E"
+                android:textSize="18dp"></TextView>
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView25"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/state"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/interregular"
+                android:text="Country"
+                android:textColor="#8F959E"
+                android:textSize="18dp"></TextView>
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView26"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/interregular"
+                android:text="Zipcode"
+                android:textColor="#8F959E"
+                android:textSize="18dp"></TextView>
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView27"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"></EditText>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+
+
+
+

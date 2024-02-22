@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/intersemibold"
+            android:text="Hello"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Welcome to style sphere"
+            android:textColor="#8f959e"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/intermedium"
+            android:text="Choose Brand"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/interregular"
+            android:text="View all"
+            android:textColor="#8f959e"
+            android:textSize="13sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"></Button>
+
+        <HorizontalScrollView
+            android:layout_marginTop="10dp"
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/adidas"
+                    app:backgroundTint="@color/white"></ImageButton>
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/nike"
+                    app:backgroundTint="@color/white"></ImageButton>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/fila"
+                    app:backgroundTint="@color/white"></ImageButton>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/puma"
+                    app:backgroundTint="@color/white"></ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/intermedium"
+                    android:text="Puma"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:backgroundTint="@color/white"></TextView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/intermedium"
+            android:text="New Arrival"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"></TextView>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/interregular"
+            android:text="View all"
+            android:textColor="#8f959e"
+            android:textSize="13sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"></Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4">
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:columnCount="2"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:rowCount="2"
+                app:backgroundTint="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:onClick="cardOnClick"
+                    android:tag="z3CJmhs3JGJN2qbXq24G"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/card_product_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/i1"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/card_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Nike Sportswear Club Fleece"
+                        android:textSize="11dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/card_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:layout_marginStart="15dp"
+                    android:onClick="cardOnClick"
+                    android:tag="eiWxIPsYqXG2dyHZXRUY"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/i2"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Trail Running Jacket Nike Windrunner"
+                        android:textSize="11sp"></TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:onClick="cardOnClick"
+                    android:tag="OyKPWLKnC0um2QGu9vF4"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/i3"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Training Top Nike Sport Clash"
+                        android:textSize="11sp"></TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:layout_marginStart="15dp"
+                    android:onClick="cardOnClick"
+                    android:tag="mvAhRLxSrHxu4j1eWgwa"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/i4"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Trail Running Jacket Nike Windrunner"
+                        android:textSize="11sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:onClick="cardOnClick"
+                    android:tag="z3CJmhs3JGJN2qbXq24G"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/p1"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Nike Sportswear Club Fleece"
+                        android:textSize="11dp"></TextView>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:layout_marginStart="15dp"
+                    android:onClick="cardOnClick"
+                    android:tag="mvAhRLxSrHxu4j1eWgwa"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/p2"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Trail Running Jacket Nike Windrunner"
+                        android:textSize="11sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card7"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:onClick="cardOnClick"
+                    android:tag="mvAhRLxSrHxu4j1eWgwa"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/p3"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Trail Running Jacket Nike Windrunner"
+                        android:textSize="11sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card8"
+                    android:layout_width="160dp"
+                    android:layout_height="257dp"
+                    android:layout_marginStart="15dp"
+                    android:onClick="cardOnClick"
+                    android:tag="mvAhRLxSrHxu4j1eWgwa"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/p4"
+                        app:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="120dp"
+                        android:src="@drawable/heart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="207dp"
+                        android:fontFamily="@font/intermedium"
+                        android:text="Trail Running Jacket Nike Windrunner"
+                        android:textSize="11sp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="235dp"
+                        android:fontFamily="@font/intersemibold"
+                        android:text="$99"
+                        android:textSize="13sp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/intermedium"
+                android:text="Home"
+                android:textColor="#3d93f8"
+                android:textSize="11dp"></Button>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/wishlist"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/heart"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/search"></ImageButton>
+
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:onClick="gotoProfile"
+                android:background="@color/white"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/u2"></ImageButton>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

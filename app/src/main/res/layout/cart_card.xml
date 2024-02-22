@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp">
+
+    <ImageView
+        android:id="@+id/cartProductImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"></ImageView>
+
+    <TextView
+        android:id="@+id/cartProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/intermedium"
+        android:textColor="@color/black"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/cartProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/interregular"
+        android:text="$45"
+        android:textColor="#8F959E"
+        android:textSize="15dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/arrowdown"
+            app:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/cart_product_quantity"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/interregular"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="17dp"></TextView>
+
+        <!-- Arrow Up Icon -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/arrowup"
+            app:backgroundTint="@color/white" />
+
+        <!-- Delete Icon -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/delete"
+            android:background="@color/white"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

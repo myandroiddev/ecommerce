@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account_info"
+            android:icon="@drawable/info"
+            android:title="Account Information"></item>
+
+        <item
+            android:id="@+id/nav_password"
+            android:icon="@drawable/lock"
+            android:title="Password"></item>
+
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/bag"
+            android:title="Order"></item>
+
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="My Cards"></item>
+
+        <item
+            android:id="@+id/nav_wishlist"
+            android:icon="@drawable/heart"
+            android:title="Wishlist"></item>
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="Settings"></item>
+
+    </group>
+
+    <item
+        android:id="@+id/nav_log_out"
+        android:icon="@drawable/logout"
+        android:title="Log out"></item>
+
+</menu>

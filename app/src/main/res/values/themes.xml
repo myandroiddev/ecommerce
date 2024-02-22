@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EcommerceMobileFashionApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#3d93f8</item>
+    </style>
+
+    <style name="rounded_btns">
+
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Theme.EcommerceMobileFashionApp" parent="Base.Theme.EcommerceMobileFashionApp" />
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "82571581909",
+    "project_id": "ecommercefashion-a06db",
+    "storage_bucket": "ecommercefashion-a06db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82571581909:android:159dc00b8a530e6bd4c55c",
+        "android_client_info": {
+          "package_name": "com.rohith.ecommercemobilefashionapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGIb4sftdecKcQfwF71B0S2wBQvTmph14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

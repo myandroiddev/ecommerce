@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:gravity="bottom"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/user"
+        ></de.hdodenhof.circleimageview.CircleImageView>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/intermedium"
+            android:text="Mr. Rohith"
+            android:textColor="@color/black"
+            android:textSize="17dp"></TextView>
+        
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified profile"
+            android:textSize="13dp"
+            android:fontFamily="@font/interregular"
+            android:textColor="#8F959E"></TextView>
+        
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 orders"
+        android:fontFamily="@font/intermedium"
+        android:textSize="11dp"
+        android:textColor="#8F959E"></TextView>
+</LinearLayout>
